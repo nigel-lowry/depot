@@ -9,4 +9,4 @@ RUN bundle install
 
 COPY . /usr/src/app/
 
-CMD ["bin/rails", "s", "0.0.0.0"]
+CMD ["bin/rails", "s", "-b", "0.0.0.0"]
