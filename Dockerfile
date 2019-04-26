@@ -1,7 +1,8 @@
 FROM ruby:2.4
 
 RUN apt-get update -yqq && apt-get install -yqq --no-install-recommends \
-  nodejs
+  nodejs \
+  sqlite3
 
 COPY Gemfile* /usr/src/app/
 WORKDIR /usr/src/app
