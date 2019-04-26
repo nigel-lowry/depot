@@ -55,4 +55,6 @@ Rails.application.configure do
 
   # Enable the web console to be seen by all (helpful with Docker)
   config.web_console.whitelisted_ips = %w( 0.0.0.0/0 ::/0 )
+
+  config.action_cable.disable_request_forgery_protection = true
 end
