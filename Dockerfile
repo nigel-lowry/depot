@@ -14,6 +14,7 @@ RUN echo "deb https://dl.yarnpkg.com/debian/ stable main" | \
 # Install packages
 RUN apt-get update -yqq && apt-get install -yqq --no-install-recommends \
   nodejs \
+  sqlite3 \
   yarn
 
 COPY Gemfile* /usr/src/app/
